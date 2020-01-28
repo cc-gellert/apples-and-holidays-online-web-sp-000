@@ -67,6 +67,7 @@ def all_supplies_in_holidays(holiday_hash)
       newName = splits.join(" ")
       flattened = supplies.flatten.split(" ") 
       puts "#{newName}: #{flattened}"
+      puts "#{event.to_s.split("_")}: #{flattened}"
       binding.pry 
     end 
   end 
